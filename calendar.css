@@ -43,6 +43,8 @@ select{
     font-size:18px;
     padding:0px 8px;
     border:1px solid #3498dp ; 
+    outline:none;
+    border-radius:4px;
 }
 
 .daysOfWeek{
@@ -54,4 +56,16 @@ select{
     background-color:#3498db;
     color:#fff;
     margin-bottom:10px;
+}
+
+.days{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:8px;
+}
+.day, .empty{
+    padding:10px;
+    text-align:center;
+    border:1px solid #ccc;
+    cursor:pointer;
 }
